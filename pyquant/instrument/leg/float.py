@@ -1,4 +1,4 @@
-from xmlrpcwrapper.leg.leg import LegAbstract
+from pyquant.leg.leg import LegAbstract
 
 
 class FloatLeg(LegAbstract):

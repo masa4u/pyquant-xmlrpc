@@ -1,5 +1,5 @@
 from abc import ABCMeta
-from xmlrpcwrapper.marketdata.marketdata import MarketDataAbstract, MarketDataType
+from pyquant.marketdata.marketdata import MarketDataAbstract, MarketDataType
 
 
 class MarketDataCurve(MarketDataAbstract):

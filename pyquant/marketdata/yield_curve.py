@@ -1,4 +1,4 @@
-from xmlrpcwrapper.marketdata.curve import MarketDataCurve
+from pyquant.marketdata.curve import MarketDataCurve
 
 
 class Tenor:
@@ -25,5 +25,5 @@ class YieldCurve(MarketDataCurve):
         return u
 
 if __name__ == '__main__':
-    from xmlrpcwrapper.convention.currency import Currency
+    from pyquant.convention.currency import Currency
     print YieldCurve(Currency.KRW)

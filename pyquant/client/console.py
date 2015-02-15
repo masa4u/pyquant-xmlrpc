@@ -1,6 +1,6 @@
 import cmd
 from colorama import Fore
-from xmlrpcwrapper.client.client import XMLRPCClient
+from pyquant.client.client import XMLRPCClient
 
 
 class XMLRPCConsole(cmd.Cmd):

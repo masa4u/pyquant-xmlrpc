@@ -1,5 +1,5 @@
-from xmlrpcwrapper.marketdata.marketdata import MarketDataType
-from xmlrpcwrapper.marketdata.single import MarketDataSingle
+from pyquant.marketdata.marketdata import MarketDataType
+from pyquant.marketdata.single import MarketDataSingle
 
 
 class MarketDataSpot(MarketDataSingle):

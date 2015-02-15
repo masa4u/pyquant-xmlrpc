@@ -1,4 +1,4 @@
-from xmlrpcwrapper.pricer.pricer import PricerAbstract, PricerType
+from pyquant.pricer.pricer import PricerAbstract, PricerType
 
 class PIAXML(PricerAbstract):
     class Meta:

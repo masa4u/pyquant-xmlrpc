@@ -1,4 +1,4 @@
-from xmlrpcwrapper.quant.numerical.numerical import NumericalAbstract
+from pyquant.quant.numerical.numerical import NumericalAbstract
 
 
 class PDE(NumericalAbstract):

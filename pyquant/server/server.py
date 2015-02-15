@@ -1,7 +1,7 @@
 from SimpleXMLRPCServer import SimpleXMLRPCServer
 import logging
 
-from xmlrpcwrapper.marketdata.spot import MarketDataSpot
+from pyquant.marketdata.spot import MarketDataSpot
 
 
 def xmlrpc_market_data_spot(name, date):

@@ -1,8 +1,11 @@
-from xmlrpcwrapper.instrument.instrument import InstrumentAbstract
+from pyquant.instrument.instrument import InstrumentAbstract
 
 
-class NoteInstrument():
-    __metaclass__ = InstrumentAbstract
+class NoteInstrument(InstrumentAbstract):
 
     class Meta:
         legs = []
+
+    @property
+    def leg_size(self):
+        return 1

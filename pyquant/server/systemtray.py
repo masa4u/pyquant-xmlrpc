@@ -228,7 +228,7 @@ if __name__ == '__main__':
     hover_text = "XMLRPC systemtray"
 
     def tray_xmlrpc_server_init(sysTrayIcon):
-        from xmlrpcwrapper.server.server import run_xmlrpc_server
+        from pyquant.server.server import run_xmlrpc_server
         run_xmlrpc_server()
 
     def simon(sysTrayIcon):

@@ -1,6 +1,6 @@
-from xmlrpcwrapper.design_pattern.singleton import SingletonMetaclass, with_metaclass
+from pyquant.design_pattern.singleton import SingletonMetaclass, with_metaclass
 import xmlrpclib
-import xmlrpcwrapper.server.server as xmlrpcserver
+import pyquant.server.server as xmlrpcserver
 
 
 class XMLRPCClient(with_metaclass(SingletonMetaclass)):
