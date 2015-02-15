@@ -1,5 +1,5 @@
 from pyquant.instrument.note import NoteInstrument
-from pyquant.leg.range_accrual import DualRangeAccrualLeg
+from pyquant.instrument.leg.range_accrual import DualRangeAccrualLeg
 from pyquant.product.product import ProductAbstract
 from pyquant.convention.currency import Currency
 
