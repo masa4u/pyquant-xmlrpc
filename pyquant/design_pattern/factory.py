@@ -1,15 +1,17 @@
 #http://code.activestate.com/recipes/578450-factory-pattern/
 
+
 class Factory:
     def register(self, methodName, constructor, *args, **kargs):
         """register a constructor"""
         _args = [constructor]
         _args.extend(args)
-        setattr(self, methodName,apply(Functor,_args, kargs))
+        setattr(self, methodName, apply(Functor, _args, kargs))
 
     def unregister(self, methodName):
         """unregister a constructor"""
         delattr(self, methodName)
+
 
 class Functor:
     def __init__(self, function, *args, **kargs):

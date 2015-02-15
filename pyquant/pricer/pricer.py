@@ -4,7 +4,7 @@ from enum import Enum
 
 class PricerType(Enum):
     PIAXML = 0
-    ComDLL = 1
+    ATLComDLL = 1
     StaticDLL = 2
 
 
