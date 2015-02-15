@@ -1,0 +1,2 @@
+colorama
+enum34=1.0.4
