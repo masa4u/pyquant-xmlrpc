@@ -3,12 +3,11 @@ from pyquant.design_pattern.factory import Factory
 
 
 class MonteCarlo(NumericalAbstract):
-    class Meta:
-        Parameter = {'DailyStep': int,
-                     'NumberOfSimulation': int}
+    Parameter = {'DailyStep': int,
+                 'NumberOfSimulation': int}
 
     def __init__(self, args):
-        for key, value in self.Meta.Parameter.items():
+        for key, value in self.Parameter.items():
             setattr(self, key, args[key])
 
     def __repr__(self):
