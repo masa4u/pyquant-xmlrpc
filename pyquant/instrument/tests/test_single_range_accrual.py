@@ -10,3 +10,6 @@ class TestSingleRangeAccrual(unittest.TestCase):
         self.assertEqual(instrument.leg_size, 1)
         self.assertEqual(instrument.legs[0].reference_size, 1)
         self.assertEqual(instrument.legs[0].references[0].reference, ReferenceSingle('KRW CD91').reference)
+
+if __name__ == '__main__':
+    unittest.main()

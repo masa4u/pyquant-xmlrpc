@@ -15,9 +15,9 @@ class CallableDualRangeAccrual(ProductAbstract, InstrumentDualRangeAccrual,
 
 if __name__ == '__main__':
     import unittest
-
-    from pyquant.convention.tests.currency_tests import TestCurrency
-    from pyquant.instrument.tests.single_range_accrual_tests import TestSingleRangeAccrual
+    from pyquant.tests.utils import test_all_file_from_inspection
+    test_all_file_from_inspection('pyquant.convention.currency')
+    test_all_file_from_inspection('pyquant.instrument.single_range_accrual')
 
     unittest.main()
     product = CallableDualRangeAccrual(Currency.KRW, 'KRW CD91', 'KRW KTB3m')

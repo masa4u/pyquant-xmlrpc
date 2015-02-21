@@ -8,6 +8,8 @@ class InstrumentSingleSpreadRangeAccrual(InstrumentAbstract):
         spread_leg = SpreadRangeAccrualLeg(reference21, reference22)
         self._legs = [single_leg, spread_leg]
 
+    def instrument_type(self):
+        return 'SingleSpreadRangeAccrual'
 
 if __name__ == '__main__':
     instrument = InstrumentSingleSpreadRangeAccrual('KRW CD91', ('KRW CD91', 'KTB 3m'))

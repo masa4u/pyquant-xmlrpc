@@ -84,3 +84,10 @@ class OptionalRisky(OptionalRiskyAbstract):
     @property
     def is_risky(self):
         return True
+
+class OptionalAutocallable(object):
+    __metaclass__ = ABCMeta
+
+    @property
+    def is_autocallable(self):
+        return True

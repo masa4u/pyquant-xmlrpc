@@ -9,6 +9,10 @@ class InstrumentTripleRangeAccrual(InstrumentAbstract):
         single_leg3 = SingleRangeAccrualLeg(reference3)
         self._legs = [single_leg1, single_leg2, single_leg3]
 
+    @property
+    def instrument_type(self):
+        return 'TripleRangeAccrual'
+
 if __name__ == '__main__':
     instrument = InstrumentTripleRangeAccrual('KRW CD91', 'KRW CD91', 'KTB 3m')
     print instrument.legs
