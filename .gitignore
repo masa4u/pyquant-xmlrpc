@@ -1,1 +1,9 @@
+#pycharm files
+.idea/
+
+
+#unused python files
 *.pyc
+*.egg-info/
+build/
+dist_script/
