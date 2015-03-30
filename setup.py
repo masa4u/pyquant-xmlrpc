@@ -22,7 +22,7 @@ setup(
     packages=['pyquant',
               'pyquant.client',
               'pyquant.convention',
-              'pyquant.design_pattern'
+              'pyquant.patterns'
               ],
     # long_description=read('README'),
     # classifiers=[

@@ -10,6 +10,10 @@ class ReferenceType(Enum):
 class ReferenceAbstract():
     __metaclass__ = ABCMeta
 
+    @abstractmethod
+    def __init__(self):
+        self._reference = []
+
     @property
     def reference(self):
         return self._reference
@@ -22,12 +26,13 @@ class ReferenceAbstract():
         return len(self.reference)
 
     def __repr__(self):
-        return 'Reference(%s)' % ', '.join(self._reference)
+        return 'Reference(%s)' % str(self._reference)
 
 
 class ReferenceSingle(ReferenceAbstract):
 
     def __init__(self, reference):
+        super(ReferenceSingle, self).__init__()
         self._reference = [reference]
 
     @property
@@ -37,6 +42,7 @@ class ReferenceSingle(ReferenceAbstract):
 
 class ReferenceSpread(ReferenceAbstract):
     def __init__(self, reference1, reference2):
+        super(ReferenceSingle, self).__init__()
         self._reference = [reference1, reference2]
 
     @property

@@ -5,6 +5,8 @@ from pyquant.instrument.leg.reference import ReferenceSingle, ReferenceSpread
 
 
 class RangeAccrualLeg(LegAbstract):
+    def __init__(self):
+        super(RangeAccrualLeg, self).__init__()
 
     @property
     def leg_type(self):
@@ -16,14 +18,12 @@ class RangeAccrualLeg(LegAbstract):
 
 class SingleRangeAccrualLeg(RangeAccrualLeg):
     def __init__(self, reference):
-        self._references = []
         super(SingleRangeAccrualLeg, self).__init__()
         self.references.append(ReferenceSingle(reference))
 
 
 class SpreadRangeAccrualLeg(RangeAccrualLeg):
     def __init__(self, reference1, reference2):
-        self._references = []
         super(SpreadRangeAccrualLeg, self).__init__()
         self.references.append(ReferenceSpread(reference1, reference2))
 

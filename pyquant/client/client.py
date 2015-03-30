@@ -1,4 +1,4 @@
-from pyquant.design_pattern.singleton import SingletonMetaclass, with_metaclass
+from pyquant.patterns.singleton import SingletonMetaclass, with_metaclass
 import xmlrpclib
 import pyquant.server.server as xmlrpcserver
 

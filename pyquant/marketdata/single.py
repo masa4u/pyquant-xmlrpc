@@ -10,6 +10,7 @@ class MarketDataSingle(MarketDataAbstract):
 
     def __init__(self):
         self._value = 0.0
+
     @property
     def value(self):
         return self._value

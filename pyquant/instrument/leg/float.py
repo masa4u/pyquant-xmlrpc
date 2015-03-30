@@ -2,5 +2,7 @@ from pyquant.instrument.leg.leg import LegAbstract
 
 
 class FloatLeg(LegAbstract):
-    class Meta:
-        leg_size = 1
+
+    def __init__(self, reference):
+        super(FloatLeg, self).__init__()
+        self.references = [reference]

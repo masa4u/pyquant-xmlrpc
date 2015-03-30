@@ -1,5 +1,5 @@
 from pyquant.quant.numerical.numerical import NumericalAbstract
-from pyquant.design_pattern.factory import Factory
+from pyquant.patterns.factory import Factory
 
 
 class MonteCarlo(NumericalAbstract):

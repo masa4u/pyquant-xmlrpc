@@ -1,4 +1,4 @@
-from abc import ABCMeta, abstractproperty
+from abc import ABCMeta, abstractproperty, abstractmethod
 from enum import Enum
 
 class LegType(Enum):
@@ -12,6 +12,10 @@ class LegType(Enum):
 
 class LegAbstract():
     __metaclass__ = ABCMeta
+
+    @abstractmethod
+    def __init__(self):
+        self._references = []
 
     @abstractproperty
     def leg_type(self):

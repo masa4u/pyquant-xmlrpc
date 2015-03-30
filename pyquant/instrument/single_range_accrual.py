@@ -2,8 +2,9 @@ from pyquant.instrument.instrument import InstrumentAbstract
 from pyquant.instrument.leg.range_accrual import SingleRangeAccrualLeg
 
 
-class InstrumentSingleRangeAccrual(InstrumentAbstract):
+class SingleRangeAccrualInstrument(InstrumentAbstract):
     def __init__(self, reference):
+        super(SingleRangeAccrualInstrument, self).__init__()
         leg = SingleRangeAccrualLeg(reference)
         self._legs = [leg]
 
